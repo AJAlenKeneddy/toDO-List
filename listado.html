@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>Tarea TODO</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <link rel='stylesheet' type='text/css' media='screen' href='css/toDO.css'>
+    <script src='js/toDO.js' defer></script>
+</head>
+<body>
+    <div class="modal">
+        <h2 class="titulo">Tareas</h2>
+        <table id="comprobantes">
+            <thead>
+                <tr>
+                    <th>ID</th>
+                    <th>Nombre</th>
+                    <th>Estado</th>
+                    <th>¿ELIMINAR?</th>
+                </tr>
+            </thead>
+            <tbody id="tabla-body">
+                <!-- Las filas se llenarán aquí -->
+            </tbody>
+        </table>
+        <br>
+        <form id="agregar-tarea-form">
+            <input maxlength="69" class="nuevatarea" type="text" id="nueva-tarea" placeholder="Nueva tarea" required />
+            
+            <label>Completada:
+                <input type="checkbox" id="nueva-tarea-completado" />
+            </label>
+            
+            <button type="submit">Agregar Tarea</button>
+        </form>
+    </div>
+</body>
+</html>

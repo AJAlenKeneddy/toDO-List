@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login y Registro</title>
+    <link rel='stylesheet' type='text/css' media='screen' href='css/login.css'>
+    
+</head>
+
+<body>
+    <!-- Botones para abrir los modales -->
+    <div class="links">
+        <a href="#" id="openRegister">Registro</a>
+        <a href="#" id="openLogin">Login</a>
+        <a href="#" id="openVerficar">Verficar</a>
+    </div>
+
+    <!-- Modal de registro -->
+    <div id="registerModal" class="modal">
+        <div class="modal-content">
+            <span class="close" id="closeRegister">&times;</span>
+            <h2>Registro</h2>
+            <form id="registerForm">
+                <div class="form-group">
+                    <label for="nombre">Nombre</label>
+                    <input type="text" id="nombre" name="nombre" required>
+                </div>
+                <div class="form-group">
+                    <label for="correo">Correo</label>
+                    <input type="email" id="correo" name="correo" required>
+                </div>
+                <div class="form-group">
+                    <label for="clave">Clave</label>
+                    <input type="password" id="clave" name="clave" required>
+                </div>
+                <div class="form-group">
+                    <button type="submit">Registrar</button>
+                </div>
+                <div id="registerMessage" class="message"></div> 
+                <label>¿Ya tienes una cuenta?</label>
+                <a href="#" id="openLoginFromRegister">Iniciar Sesión</a>
+            </form>
+        </div>
+    </div>
+
+    <!-- Modal de login -->
+    <div id="loginModal" class="modal">
+        <div class="modal-content">
+            <span class="close" id="closeLogin">&times;</span>
+            <h2>Login</h2>
+            <form id="loginForm">
+                <div class="form-group">
+                    <label for="correoLogin">Correo</label>
+                    <input type="email" id="correoLogin" name="correoLogin" required>
+                </div>
+                <div class="form-group">
+                    <label for="claveLogin">Clave</label>
+                    <input type="password" id="claveLogin" name="claveLogin" required>
+                </div>
+                <div class="form-group">
+                    <button type="submit">Login</button>
+                </div>
+                <div id="loginMessage" class="message"></div> 
+                <label>¿No tienes una cuenta?</label>
+                <a href="#" id="openRegisterFromLogin">Registrarse</a>
+                <a href="#" id="openVerificarFromLogin">Verificar Cuenta</a>
+            </form>
+        </div>
+    </div>
+    <div id="VerificarModal" class="modal">
+        <div class="modal-content">
+            <span class="close" id="closeVerificar">&times;</span>
+            <h2>Verificar Correo</h2>
+            <form id="VerificarForm">
+                <div class="form-group">
+                    <label for="correoVerificar">Correo</label>
+                    <input type="email" id="correoVerificar" name="correoVerificar" required>
+                </div>
+                <div class="form-group">
+                    <label for="codigoVerificar">Codigo</label>
+                    <input type="text" id="codigoVerificar" name="codigoVerificar" required>
+                </div>
+                <div class="form-group">
+                    <button type="submit">Verificar</button>
+                </div>
+                <div id="verificarMessage" class="message"></div> 
+                
+                <a href="#" id="openLoginFromVerificar">Iniciar Session</a>
+            </form>
+        </div>
+    </div>
+
+
+    <script src='js/login.js' defer></script>
+</body>
+
+</html>

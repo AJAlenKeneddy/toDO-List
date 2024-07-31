@@ -1,0 +1,132 @@
+table {
+    width: 100%;
+    border-collapse: collapse;
+    text-align: center;
+}
+
+th, td {
+    
+    text-align: center;
+    padding: 8px;
+    color: #ffffff;
+    background-color: #1E1E1E;
+}
+
+th {
+    
+    color:  #1E1E1E;
+}
+
+.titulo {
+    text-align: center;
+    color: white;
+}
+input, .Ingresatoken {
+    background-color: #333333; /* Gris oscuro */
+    color: #ffffff;
+    border-style: hidden;
+    text-align: center;
+    
+}
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    padding: 10%;
+    background-color: #1E1E1E; 
+    
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-bottom: 1%;
+}
+
+table, th, td {
+    border: 1px solid #000000;
+}
+
+th, td {
+    padding: 1%;
+    text-align: center;
+}
+
+th {
+    background-color: #ffffff;
+}
+
+input[type="text"],
+input[type="checkbox"],
+button {
+    margin: 3% 10;
+    padding: 3%;
+    width: 100%;
+}
+
+input[type="text"] {
+    border: 100% solid #ffffff;
+    border-radius: 10px;
+}
+
+.btneliminar {
+    background-color:  #ac2828;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.btneliminar:hover {
+    background-color: #0fff1b;
+    color: #000000;
+}
+
+button{
+    background-color:rgb(240, 140, 9);
+    border-radius: 4px;
+}
+button:hover{
+    background-color:#018808;
+    #018808
+    color: white;
+}
+form {
+    margin-bottom: 20px;
+}
+
+form input,
+form label {
+    display: block;
+    margin-bottom: 10px;
+}
+
+form label {
+    font-weight: bold;
+}
+
+/* Espaciado entre filas de la tabla */
+tr:nth-child(even) {
+    background-color: #f2f2f2;
+}
+
+/* Estilo para el campo de entrada de tareas */
+input.editable-tarea {
+    width: auto; /* Ajusta al ancho del contenedor */
+    height: auto;
+    min-width: 100%; /* Tamaño mínimo del campo */
+    max-width: 100%; /* Ajusta al ancho del contenedor */
+    box-sizing: border-box; /* Incluye padding y border en el ancho total */
+    resize: none; /* Desactiva el redimensionamiento manual */
+    padding: 14px; /* Ajusta el padding si es necesario */
+    line-height: 1.2; /* Ajusta el alto de línea si es necesario */
+    min-height: 20px; /* Tamaño mínimo para evitar que se haga demasiado pequeño */
+    overflow: hidden; /* Evita el scroll si el contenido es más grande */
+}
