@@ -98,7 +98,7 @@ document.addEventListener('DOMContentLoaded', function () {
         console.log('Registro:', { nombre, correo, clave });
     
         // Construir la URL con los parámetros
-        const url = `https://localhost:7085/api/toDo/RegistrarseTodoList/${encodeURIComponent(nombre)}/${encodeURIComponent(correo)}/${encodeURIComponent(clave)}`;
+        const url = `https://gmingenieros.somee.com/api/toDo/RegistrarseTodoList/${encodeURIComponent(nombre)}/${encodeURIComponent(correo)}/${encodeURIComponent(clave)}`;
     
         fetch(url, {
             method: 'POST'
@@ -135,7 +135,7 @@ document.addEventListener('DOMContentLoaded', function () {
         const correo = document.getElementById('correoLogin').value;
         const clave = document.getElementById('claveLogin').value;
     
-        const url = `https://localhost:7085/api/toDo/Login/${encodeURIComponent(correo)}/${encodeURIComponent(clave)}`;
+        const url = `https://gmingenieros.somee.com/api/toDo/Login/${encodeURIComponent(correo)}/${encodeURIComponent(clave)}`;
     
         fetch(url, {
             method: 'POST'
@@ -168,7 +168,7 @@ document.addEventListener('DOMContentLoaded', function () {
         const codigo = document.getElementById("codigoVerificar").value;
 
         // Construir la URL con los parámetros
-        const url = `https://localhost:7085/api/toDo/VerificarCorreo?correo=${encodeURIComponent(correo)}&codigo=${encodeURIComponent(codigo)}`;
+        const url = `https://gmingenieros.somee.com/api/toDo/VerificarCorreo?correo=${encodeURIComponent(correo)}&codigo=${encodeURIComponent(codigo)}`;
 
         fetch(url, {
             method: 'POST',
