@@ -38,7 +38,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
     // Función para actualizar la lista de tareas
     function actualizarListaTareas() {
-        fetch(`https://localhost:7085/api/toDo/Obtener_Las_Tareas/${userId}`, {
+        fetch(`https://gmingenieros.somee.com/api/toDo/Obtener_Las_Tareas/${userId}`, {
             method: 'POST',
             headers: {
                 'Authorization': `Bearer ${token}`,
@@ -82,7 +82,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
     // Función para actualizar el estado de una tarea
     window.updateEstado = function(id, completado) {
-        fetch(`https://localhost:7085/api/toDo/ActualizarEstadoTarea/${id}`, {
+        fetch(`https://gmingenieros.somee.com/api/toDo/ActualizarEstadoTarea/${id}`, {
             method: 'PUT',
             headers: {
                 'Authorization': `Bearer ${token}`,
@@ -121,7 +121,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
     // Función para actualizar una tarea
     function updateTarea(id, tarea) {
-        fetch(`https://localhost:7085/api/toDo/Actualizar_Tarea/${id}/${encodeURIComponent(tarea)}`, {
+        fetch(`https://gmingenieros.somee.com/api/toDo/Actualizar_Tarea/${id}/${encodeURIComponent(tarea)}`, {
             method: 'PUT',
             headers: {
                 'Authorization': `Bearer ${token}`,
@@ -148,7 +148,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
     // Función para agregar una tarea
     function agregarTarea(tarea, completado) {
-        fetch(`https://localhost:7085/api/toDo/Agregar_Tarea/${encodeURIComponent(tarea)}/${completado}/${userId}`, {
+        fetch(`https://gmingenieros.somee.com/api/toDo/Agregar_Tarea/${encodeURIComponent(tarea)}/${completado}/${userId}`, {
             method: 'POST',
             headers: {
                 'Authorization': `Bearer ${token}`,
@@ -182,7 +182,7 @@ document.addEventListener('DOMContentLoaded', () => {
     }
     
     window.eliminarTarea =function (id) {
-        fetch(`https://localhost:7085/api/toDo/${id}`, {
+        fetch(`https://gmingenieros.somee.com/api/toDo/Eliminartarea/${id}`, {
             method: 'DELETE',
             headers: {
                 'Authorization': `Bearer ${token}`,
