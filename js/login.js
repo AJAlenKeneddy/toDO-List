@@ -5,7 +5,7 @@ document.addEventListener('DOMContentLoaded', function () {
 
     var openRegisterBtn = document.getElementById("openRegister");
     var openLoginBtn = document.getElementById("openLogin");
-    var openVerificarBtn = document.getElementById("openVerficar");
+    var openVerificarBtn = document.getElementById("openVerificar");
     var openLoginFromRegisterBtn = document.getElementById("openLoginFromRegister");
     var openRegisterFromLoginBtn = document.getElementById("openRegisterFromLogin");
     var openLoginFromVerificarBtn = document.getElementById("openLoginFromVerificar");
